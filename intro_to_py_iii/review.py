@@ -72,7 +72,7 @@ def mult2(x):
 # And a doubling function that takes in a LIST of integers
 def mult2_list(l):
   pass
-
+"""
 # Try out our functions -
 # What will happen to the original arguments after we  
 # call the functions? Will they be modified? Or not?
@@ -85,7 +85,7 @@ mult2_list(l)
 for i in l:
   print(i)
 
-
+"""
 # 5. Review the 4 steps of UPER and apply 
 # to the following mini-challenges:
 #* UPER: Understand Plan Execute Reflect
