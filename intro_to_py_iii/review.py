@@ -59,7 +59,7 @@ s_names = [name.capitalize() for name in names if name[0].lower()=='s']
 print(s_names)
 
 # 3. Dictionary exercise from module I project
-
+#* check out dat repo den...
 
 
 
@@ -88,6 +88,7 @@ for i in l:
 
 # 5. Review the 4 steps of UPER and apply 
 # to the following mini-challenges:
+#* UPER: Understand Plan Execute Reflect
 
 # Return the "centered" average of an array of ints, which we'll 
 # say is the mean average of the values, except ignoring the 
