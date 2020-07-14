@@ -52,6 +52,11 @@ evens = [num for num in numbers if num % 2 == 0]
 names = ["Sarah", "jorge", "sam", "frank", "bob", "sandy", "shawn"]
 # Create a new list containing only the names that start with `s` so that they are properly capitalized (regardless of how the name originally appears) 
 
+#s_names = [name.capitalize() for name in names if name.startswith('s')]
+#* ^^ This doesn't grab the names that start with an uppercase 'S'...so we fix!!
+
+s_names = [name.capitalize() for name in names if name[0].lower()=='s']
+print(s_names)
 
 # 3. Dictionary exercise from module I project
 
