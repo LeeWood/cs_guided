@@ -26,7 +26,8 @@ from category import Category #these are in the same directory...so this is all 
 #my_store = Store("Wags N Wiggles", ["animal care", "borks", "food", "toys for good bois"]) #we're making categories a list because it's multiples
 
 #using the new Category class...
-my_store = Store("Wags N Wiggles", [Category("animal care"), Category("borks"), Category("food"), Category("toys for good bois")])
+my_store = Store("Wags N Wiggles", [Category("animal care"), Category("borks"), 
+                                    Category("food"), Category("toys for good bois")])
 
 print( my_store )
 print( my_store.__repr__() ) #this is more for developers.
