@@ -14,6 +14,7 @@ class Store: #name should be uppercase and match file name...best practice
         for cat in self.categories:
             output += f"\n{i}. {cat}"
             i += 1
+        output += f'\n{i}. Quit'
 
         return output    
 
@@ -31,8 +32,9 @@ print( my_store )
 print( my_store.__repr__() ) #this is more for developers.
 
 #add input parser
-selection = int(input('Category Number:\n'))
-print(f'You Selected {my_store.categories[selection]}')
+selection = int(input('Please select a category number \n'))-1
 
-#? What if we wanted category objects instead of category strings??? See the category.py file
+while(selection != len(my_store.categories)):
+    print(f'You selected {my_store.categories[selection]}')
+    selection = int(input('Please select a category number: \n'))-1
 
