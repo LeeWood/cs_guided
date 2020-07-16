@@ -1,9 +1,10 @@
 class Store: #name should be uppercase and match file name...best practice
-    def __init__(self, name, categories): #our constructor
+    def __init__(self, name, categories, products): #our constructor
         #*attributes
         self.name = name #!the right hand side needs to match the parameter list!
         self.categories = categories
         # at this point...we have a *template* for the store...we still have to instantiate the object! 
+        self.products = products
 
     def __str__(self): #!We have to tell Python how to print this object out.
         #return f'{self.name} has {len(self.categories)} categories'
@@ -22,12 +23,17 @@ class Store: #name should be uppercase and match file name...best practice
         return f'{self.name} has {len(self.categories)} categories'
 
 from category import Category #these are in the same directory...so this is all we have to do!
-
+from product import Product
 #my_store = Store("Wags N Wiggles", ["animal care", "borks", "food", "toys for good bois"]) #we're making categories a list because it's multiples
 
 #using the new Category class...
-my_store = Store("Wags N Wiggles", [Category("animal care"), Category("borks"), 
-                                    Category("food"), Category("toys for good bois")])
+my_catagories = [Category("animal care"), Category("borks"), 
+                Category("food"), Category("toys for good bois")]
+
+my_products = [Product("squeaky toy", "squeak squeak!", 5)]                
+
+my_store = Store("Wags N Wiggles", my_catagories, my_products)
+
 
 print( my_store )
 print( my_store.__repr__() ) #this is more for developers.
